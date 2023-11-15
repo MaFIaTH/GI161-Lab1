@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Collections;
 using UnityEngine;
 
 public enum BallColor
@@ -26,8 +27,9 @@ public class Ball : MonoBehaviour
         _meshRenderer = GetComponent<MeshRenderer>();
     }
 
-    public void SetColorAndPoint(BallColor ballColor)
+    public void SetColorAndPoint(BallColor color)
     {
+        ballColor = color;
         point = (int)ballColor;
         switch (ballColor)
         {
