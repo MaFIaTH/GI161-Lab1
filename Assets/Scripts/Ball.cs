@@ -21,6 +21,7 @@ public class Ball : MonoBehaviour
 
     private MeshRenderer _meshRenderer;
     public int Point => point;
+    public BallColor BallColor => ballColor;
 
     private void Awake()
     {
